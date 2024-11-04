@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full h-full flex flex-col">
+      <div class="w-3/12 shadow-lg shadow-slate-400 self-center">
+        <img
+          class="w-full"
+          src="https://th.bing.com/th/id/OIP.9ZZ2TKNBrJDO0Nb4nY3rUwHaEG?rs=1&pid=ImgDetMain"
+          alt="Image Banner"
+        />
+        <div class="font-semibold shadow-md py-2">
+          <p>FIFA Street Score Keeper</p>
+        </div>
+        <div class="flex">
+          <div class="">
+            <div id="p1-score" class="text-4xl">0</div>
+            <p class="text-md">P1</p>
+          </div>
+          <p class="self-center pb-4">to</p>
+          <div class="">
+            <div id="p2-score" class="text-4xl">0</div>
+            <p class="text-md">P2</p>
+          </div>
+        </div>
+        <div class="pb-2">Use button below to keep score</div>
+        <div class="flex">
+          <div class="font-bold mr-2">Playing To</div>
+          <select name="playto" id="playto" class="font-normal rounded-lg">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="flex text-white">
+          <button
+            id="p1-add-score"
+            class="py-1.5 grow shadow-md shadow-slate-400 border bg-blue-700"
+          >
+            <p>+1 Player One</p>
+          </button>
+          <button
+            id="p2-add-score"
+            class="py-1.5 grow shadow-md shadow-slate-400 border bg-red-700"
+          >
+            <p>+1 Player Two</p>
+          </button>
+          <button
+            id="reset"
+            class="py-1.5 grow shadow-md shadow-slate-400 border bg-green-700"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
